@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{dddf9bf8-7012-4ed3-8976-fd43eb72e80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Library">
+      <UniqueIdentifier>{9e82159b-692a-4dec-84c8-1b2ff0dc81a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\Game">
+      <UniqueIdentifier>{b0b2ebf0-3883-43cd-abd1-ff4a99bc0605}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneControl.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\TitleScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\GameScene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Library\Graphics.cpp">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Library\Input.cpp">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Library\Library.cpp">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Library\ModelManager.cpp">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Library\TextureManager.cpp">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\CameraManager.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\Player.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\Bullet.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\BulletManager.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\Enemy.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\EnemyManager.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\Score.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Scene\SceneControl.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\BaseScene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\TitleScene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\GameScene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Library\Graphics.h">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Library\Input.h">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Library\Library.h">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Library\ModelManager.h">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Library\TextureManager.h">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\CameraManager.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\Player.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\ObjBase.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\Bullet.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\BulletManager.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\Enemy.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\EnemyManager.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\Score.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
