@@ -64,6 +64,9 @@
     <ClCompile Include="Src\Scene\Game\Score.cpp">
       <Filter>ソース ファイル\Scene\Game</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Scene\Game\Enemy02.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Scene\SceneControl.h">
@@ -115,6 +118,12 @@
       <Filter>ソース ファイル\Scene\Game</Filter>
     </ClInclude>
     <ClInclude Include="Src\Scene\Game\Score.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\Enemy02.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\EnemyBase.h">
       <Filter>ソース ファイル\Scene\Game</Filter>
     </ClInclude>
   </ItemGroup>

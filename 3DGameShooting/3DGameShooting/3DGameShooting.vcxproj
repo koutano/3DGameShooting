@@ -30,6 +30,7 @@
     <ClCompile Include="Src\Scene\Game\BulletManager.cpp" />
     <ClCompile Include="Src\Scene\Game\CameraManager.cpp" />
     <ClCompile Include="Src\Scene\Game\Enemy.cpp" />
+    <ClCompile Include="Src\Scene\Game\Enemy02.cpp" />
     <ClCompile Include="Src\Scene\Game\EnemyManager.cpp" />
     <ClCompile Include="Src\Scene\Game\Player.cpp" />
     <ClCompile Include="Src\Scene\Game\Score.cpp" />
@@ -48,6 +49,8 @@
     <ClInclude Include="Src\Scene\Game\BulletManager.h" />
     <ClInclude Include="Src\Scene\Game\CameraManager.h" />
     <ClInclude Include="Src\Scene\Game\Enemy.h" />
+    <ClInclude Include="Src\Scene\Game\Enemy02.h" />
+    <ClInclude Include="Src\Scene\Game\EnemyBase.h" />
     <ClInclude Include="Src\Scene\Game\EnemyManager.h" />
     <ClInclude Include="Src\Scene\Game\ObjBase.h" />
     <ClInclude Include="Src\Scene\Game\Player.h" />

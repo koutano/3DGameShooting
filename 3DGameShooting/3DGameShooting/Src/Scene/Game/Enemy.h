@@ -1,12 +1,12 @@
 #ifndef ENEMY_H_
 #define ENEMY_H_
 
-#include "ObjBase.h"
+#include "EnemyBase.h"
 #include "DxLib.h"
 
 namespace Game
 {
-	class Enemy:public ObjBase
+	class Enemy:public EnemyBase
 	{
 	public:
 		Enemy(VECTOR pos_);
@@ -14,14 +14,8 @@ namespace Game
 	public:
 		void Update()override;
 		void Draw()override;
-		bool IsDead();
+		bool IsDead()override;
 
-		void SetDeadFlag(bool deadFlag_) { deadFlag = deadFlag_; }
-	private:
-		void Move(int key_, float degreeAngle_);
-		float speed{ 0.1f };
-		int deleteTime{ 300 };
-		bool deadFlag{ false };
 	};
 }
 
