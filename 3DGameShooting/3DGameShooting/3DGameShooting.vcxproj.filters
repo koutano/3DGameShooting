@@ -67,9 +67,6 @@
     <ClCompile Include="Src\Scene\Game\Enemy02.cpp">
       <Filter>ソース ファイル\Scene\Game</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Scene\Game\EnemyBase.cpp">
-      <Filter>ソース ファイル\Scene\Game</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Scene\SceneControl.h">
