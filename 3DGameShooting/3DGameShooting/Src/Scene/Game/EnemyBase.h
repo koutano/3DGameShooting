@@ -12,11 +12,11 @@ namespace Game
 			ObjBase(pos_,scale_,degreeAngle_)
 		{}
 		~EnemyBase() = default;
-		virtual bool IsDead() = 0;
-
+	public:
+		bool GetDeadFlag() { return deadFlag; }
 		void SetDeadFlag(bool deadFlag_) { deadFlag = deadFlag_; }
 	protected:
-		float speed{ 0.1f };
+		float speed{ 0.5f };
 		int deleteTime{ 300 };
 		bool deadFlag{ false };
 		int hp{ 1 };
