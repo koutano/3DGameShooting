@@ -10,12 +10,10 @@ namespace Game
 	{
 	public:
 		Enemy(VECTOR pos_);
-		~Enemy()override;
+		~Enemy()override = default;
 	public:
 		void Update()override;
 		void Draw()override;
-		bool IsDead()override;
-
 	};
 }
 
