@@ -18,6 +18,7 @@ namespace Game
 		// 弾の生死確認用
 		bool IsDead() { return deadFlag; }
 		void SetDeadFlag(bool deadFlag_) { deadFlag = deadFlag_; }
+		void OnCollisionEnemy() { deadFlag = true; }
 	private:
 		float speed{ 1.0f };	// 弾の速度
 		int deleteTime{ 300 };	// 生存可能フレーム数
