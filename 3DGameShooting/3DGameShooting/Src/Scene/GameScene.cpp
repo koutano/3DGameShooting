@@ -55,9 +55,12 @@ namespace Game
 			{
 				if (Collision(*itr1, *itr2))
 				{
-					(*itr1)->SetDeadFlag(true);
-					(*itr2)->SetDeadFlag(true);
-					score->AddScore(70);
+					(*itr1)->OnCollisionBullet();
+					(*itr2)->OnCollisionEnemy();
+					if ((*itr1)->GetDeadFlag())
+					{
+						score->AddScore(70);
+					}
 				}
 			}
 		}
@@ -84,13 +87,13 @@ namespace Game
 		//auto cameraa = camera->GetPos();
 		
 
-		auto cameraRange = VSub(camera->GetPos(), player->GetPos());
-		//float cameraRange = 10;
-		float fav = 120;
-		float sita = 90 - (fav / 2);
+		//auto cameraRange = VSub(camera->GetPos(), player->GetPos());
+		////float cameraRange = 10;
+		//float fav = 120;
+		//float sita = 90 - (fav / 2);
 
 
-		auto moverangeX = cameraRange.z * tanf(sita / 180 * M_PI);		
+		//auto moverangeX = cameraRange.z * tanf(sita / 180 * M_PI);		
 	}
 
 	void GameScene::Draw()
