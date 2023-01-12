@@ -31,6 +31,7 @@
     <ClCompile Include="Src\Scene\Game\CameraManager.cpp" />
     <ClCompile Include="Src\Scene\Game\Enemy.cpp" />
     <ClCompile Include="Src\Scene\Game\Enemy02.cpp" />
+    <ClCompile Include="Src\Scene\Game\EnemyBase.cpp" />
     <ClCompile Include="Src\Scene\Game\EnemyManager.cpp" />
     <ClCompile Include="Src\Scene\Game\Player.cpp" />
     <ClCompile Include="Src\Scene\Game\Score.cpp" />
