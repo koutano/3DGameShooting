@@ -3,6 +3,7 @@
 
 #include "Enemy.h"
 #include "vector"
+#include "EnemyBase.h"
 
 namespace Game
 {
@@ -14,12 +15,13 @@ namespace Game
 		
 	public:
 		void CreateEnemy(VECTOR pos_);
+		void CreateEnemy02(VECTOR pos_);
 		void Update();
 		void Draw();
 
-		std::vector<Enemy*> GetEnemies() { return enemies; }
+		std::vector<EnemyBase*> GetEnemies() { return enemies; }
 	private:
-		std::vector<Enemy*> enemies;
+		std::vector<EnemyBase*> enemies;
 	};
 }
 
