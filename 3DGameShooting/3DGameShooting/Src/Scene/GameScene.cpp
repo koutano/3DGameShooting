@@ -81,19 +81,7 @@ namespace Game
 		{
 			isNextScene = true;
 		}
-
-		
-
-		//auto cameraa = camera->GetPos();
-		
-
-		//auto cameraRange = VSub(camera->GetPos(), player->GetPos());
-		////float cameraRange = 10;
-		//float fav = 120;
-		//float sita = 90 - (fav / 2);
-
-
-		//auto moverangeX = cameraRange.z * tanf(sita / 180 * M_PI);		
+	
 	}
 
 	void GameScene::Draw()
