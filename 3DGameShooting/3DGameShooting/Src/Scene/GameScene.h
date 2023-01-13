@@ -1,4 +1,4 @@
-#ifndef GAME_SCENE_H_
+ï»¿#ifndef GAME_SCENE_H_
 #define GAME_SCENE_H_
 
 #include "BaseScene.h"
@@ -17,19 +17,19 @@ namespace Game
 		~GameScene()override;
 
 	public:
-		// XV—p
+		// æ›´æ–°ç”¨
 		void Update()override;
-		// •`‰æ—p
+		// æç”»ç”¨
 		void Draw()override;
 
 		bool Collision(ObjBase* obj1_, ObjBase* obj2_);
 
 		void MoveRange(CameraManager* camera, ObjBase* obj2);
 	private:
-		Player* player{ nullptr };				// ƒvƒŒƒCƒ„[
-		CameraManager* camera{ nullptr };		// ƒJƒƒ‰
-		BulletManager* bulletManager{ nullptr };// ’e
-		EnemyManager* enemyManager{ nullptr };	// “G
+		Player* player{ nullptr };				// ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼
+		CameraManager* camera{ nullptr };		// ã‚«ãƒ¡ãƒ©
+		BulletManager* bulletManager{ nullptr };// å¼¾
+		EnemyManager* enemyManager{ nullptr };	// æ•µ
 		Score* score{ nullptr };
 
 		int enemyCount{ 0 };

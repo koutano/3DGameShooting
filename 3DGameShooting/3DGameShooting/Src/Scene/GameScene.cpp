@@ -1,4 +1,4 @@
-#include "GameScene.h"
+ï»¿#include "GameScene.h"
 #include "../Library/Library.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
@@ -119,7 +119,7 @@ namespace Game
 		VECTOR obj2ColPos2{ pos2.x - (scale2.x / 2),pos2.y - (scale2.y / 2),pos2.z - (scale2.z / 2) };
 
 		/*
-		// ‚±‚Á‚¿‚Å‚àok
+		// ã“ã£ã¡ã§ã‚‚ok
 		if (obj1ColPos1.x >= obj2ColPos2.x && obj2ColPos1.x >= obj1ColPos2.x&&
 			obj1ColPos1.y >= obj2ColPos2.y && obj2ColPos1.y >= obj1ColPos2.y&&
 			obj1ColPos1.z >= obj2ColPos2.z && obj2ColPos1.z >= obj1ColPos2.z)

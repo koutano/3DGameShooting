@@ -1,4 +1,4 @@
-#ifndef BULLET_MANAGER_H_
+ï»¿#ifndef BULLET_MANAGER_H_
 #define BULLET_MANAGER_H_
 
 #include "Bullet.h"
@@ -13,11 +13,11 @@ namespace Game
 		~BulletManager();
 
 	public:
-		// ’e‚Ì¶¬
+		// å¼¾ã®ç”Ÿæˆ
 		void CreateBullet(ObjBase* obj_);
-		// XV—p
+		// æ›´æ–°ç”¨
 		void Update();
-		// •`‰æ—p
+		// æç”»ç”¨
 		void Draw();
 
 		std::vector< Bullet* > GetBullets() { return bullets; }

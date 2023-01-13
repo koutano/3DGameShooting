@@ -1,4 +1,4 @@
-#ifndef OBJ_BASE_H_
+﻿#ifndef OBJ_BASE_H_
 #define OBJ_BASE_H_
 
 #include <DxLib.h>

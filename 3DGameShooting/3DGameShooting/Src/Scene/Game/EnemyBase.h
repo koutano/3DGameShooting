@@ -1,4 +1,4 @@
-#ifndef ENEMY_BASE_H_
+﻿#ifndef ENEMY_BASE_H_
 #define ENEMY_BASE_H_
 
 #include "ObjBase.h"

@@ -1,4 +1,4 @@
-#ifndef BASE_SCENE_H_
+﻿#ifndef BASE_SCENE_H_
 #define BASE_SCENE_H_
 
 namespace Game

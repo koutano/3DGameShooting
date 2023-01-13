@@ -1,4 +1,4 @@
-#ifndef ENEMY_H_
+﻿#ifndef ENEMY_H_
 #define ENEMY_H_
 
 #include "EnemyBase.h"

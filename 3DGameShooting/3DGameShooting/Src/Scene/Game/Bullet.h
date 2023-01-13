@@ -1,4 +1,4 @@
-#ifndef BULLET_H_
+ï»¿#ifndef BULLET_H_
 #define BULLET_H_
 
 #include "ObjBase.h"
@@ -11,17 +11,17 @@ namespace Game
 		Bullet(ObjBase* obj_);
 		~Bullet()override;
 	public:
-		// XV—p
+		// æ›´æ–°ç”¨
 		void Update()override;
-		// •`‰æ—p
+		// æç”»ç”¨
 		void Draw()override;
-		// ’e‚Ì¶€Šm”F—p
+		// å¼¾ã®ç”Ÿæ­»ç¢ºèªç”¨
 		bool IsDead() { return deadFlag; }
 		void SetDeadFlag(bool deadFlag_) { deadFlag = deadFlag_; }
 		void OnCollisionEnemy() { deadFlag = true; }
 	private:
-		float speed{ 1.0f };	// ’e‚Ì‘¬“x
-		int deleteTime{ 300 };	// ¶‘¶‰Â”\ƒtƒŒ[ƒ€”
+		float speed{ 1.0f };	// å¼¾ã®é€Ÿåº¦
+		int deleteTime{ 300 };	// ç”Ÿå­˜å¯èƒ½ãƒ•ãƒ¬ãƒ¼ãƒ æ•°
 		bool deadFlag{ false };
 	};
 }

@@ -1,4 +1,4 @@
-#ifndef SCENE_CONTROL_H_
+ï»¿#ifndef SCENE_CONTROL_H_
 #define SCENE_CONTROL_H_
 
 #include "BaseScene.h"
@@ -12,11 +12,11 @@ namespace Game
 		~SceneControl() = default;
 
 	public:
-		// XV—pŠÖ”
+		// æ›´æ–°ç”¨é–¢æ•°
 		void Update();
 
 	private:
-		// ƒV[ƒ“ˆÚs—pŠÖ”
+		// ã‚·ãƒ¼ãƒ³ç§»è¡Œç”¨é–¢æ•°
 		void ChangeScene();
 
 	private:

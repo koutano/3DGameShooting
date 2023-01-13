@@ -1,4 +1,4 @@
-#include "EnemyManager.h"
+ï»¿#include "EnemyManager.h"
 #include "../../Library/Library.h"
 #include "Enemy.h"
 #include "Enemy02.h"
@@ -7,11 +7,11 @@ namespace Game
 {
 	EnemyManager::EnemyManager()
 	{
-		// Enemyƒ‚ƒfƒ‹‚Ìƒ[ƒh
+		// Enemyãƒ¢ãƒ‡ãƒ«ã®ãƒ­ãƒ¼ãƒ‰
 		TEngine::Library::LoadModel("enemy", "Res/Enemy.mv1");
 		TEngine::Library::LoadModel("enemy02", "Res/Enemy02.mv1");
 
-		// Enemy‚ÌF•t‚¯
+		// Enemyã®è‰²ä»˜ã‘
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy"), 0, GetColorF(1.0f, 0.0f, 0.0f, 1.0f));
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy02"), 0, GetColorF(0.0f, 1.0f, 0.0f, 1.0f));
 
@@ -37,13 +37,13 @@ namespace Game
 
 	void EnemyManager::Update()
 	{
-		// “G‚ÌXVˆ—
+		// æ•µã®æ›´æ–°å‡¦ç†
 		for (auto enemy : enemies)
 		{
 			enemy->Update();
 		}
 
-		// “G‚ÌÁ‚¦‚éˆ—
+		// æ•µã®æ¶ˆãˆã‚‹å‡¦ç†
 		for (auto itr = enemies.begin(), itr_end = enemies.end(); itr != enemies.end();)
 		{
 			if ((*itr)->GetDeadFlag())

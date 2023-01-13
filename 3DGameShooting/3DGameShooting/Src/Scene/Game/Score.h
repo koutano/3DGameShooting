@@ -1,4 +1,4 @@
-#ifndef SCORE_H_
+﻿#ifndef SCORE_H_
 #define SCORE_H_
 
 namespace Game

@@ -1,4 +1,4 @@
-#ifndef ENEMY_MANAGER_H_
+﻿#ifndef ENEMY_MANAGER_H_
 #define ENEMY_MANAGER_H_
 
 #include "Enemy.h"

@@ -1,4 +1,4 @@
-#include "BulletManager.h"
+ï»¿#include "BulletManager.h"
 #include "../../Library/Library.h"
 namespace Game
 {
@@ -23,13 +23,13 @@ namespace Game
 
 	void BulletManager::Update()
 	{
-		// ’e‚ÌXVˆ—
+		// å¼¾ã®æ›´æ–°å‡¦ç†
 		for (auto bullet : bullets)
 		{
 			bullet->Update();
 		}
 
-		// ’e‚ÌÁ‚¦‚éˆ—
+		// å¼¾ã®æ¶ˆãˆã‚‹å‡¦ç†
 		for (auto itr = bullets.begin(), itr_end = bullets.end(); itr != bullets.end();)
 		{
 			if ((*itr)->IsDead())
