@@ -2,6 +2,7 @@
 #include "../../Library/Library.h"
 #include "Enemy.h"
 #include "Enemy02.h"
+#include "Enemy03.h"
 
 namespace Game
 {
@@ -10,11 +11,12 @@ namespace Game
 		// Enemyモデルのロード
 		TEngine::Library::LoadModel("enemy", "Res/Enemy.mv1");
 		TEngine::Library::LoadModel("enemy02", "Res/Enemy02.mv1");
+		TEngine::Library::LoadModel("enemy03", "Res/Enemy03.mv1");
 
 		// Enemyの色付け
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy"), 0, GetColorF(1.0f, 0.0f, 0.0f, 1.0f));
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy02"), 0, GetColorF(0.0f, 1.0f, 0.0f, 1.0f));
-
+		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy03"), 0, GetColorF(0.0f, 0.0f, 1.0f, 1.0f));
 	}
 
 	EnemyManager::~EnemyManager()
@@ -33,6 +35,11 @@ namespace Game
 	void EnemyManager::CreateEnemy02(VECTOR pos_)
 	{
 		enemies.push_back(new Enemy02(pos_));
+	}
+
+	void EnemyManager::CreateEnemy03(VECTOR pos_)
+	{
+		enemies.push_back(new Enemy03(pos_));
 	}
 
 	void EnemyManager::Update()

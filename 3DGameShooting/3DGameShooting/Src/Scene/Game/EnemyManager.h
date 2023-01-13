@@ -16,6 +16,7 @@ namespace Game
 	public:
 		void CreateEnemy(VECTOR pos_);
 		void CreateEnemy02(VECTOR pos_);
+		void CreateEnemy03(VECTOR pos_);
 		void Update();
 		void Draw();
 
