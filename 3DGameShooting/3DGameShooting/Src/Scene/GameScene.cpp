@@ -2,7 +2,8 @@
 #include "../Library/Library.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
-
+#include <DxLib.h>
+#include <functional>
 namespace Game
 {
 
@@ -65,13 +66,22 @@ namespace Game
 			}
 		}
 
-		if (enemyCount >= 0)
+		auto CreateEnemyFunc = [this](int& count_, int maxCount_, std::function<void(VECTOR)> CreateFunc)
 		{
-			enemyManager->CreateEnemy(VGet(GetRand(player->GetMoveWidthArea() * 2) - (player->GetMoveWidthArea()),
-				GetRand(player->GetMoveHeightArea() * 2) - (player->GetMoveHeightArea()), enemyFirstPosZ));
-			enemyCount = 0;
-		}
+			if (count_ >= maxCount_)
+			{
+				VECTOR v = VGet(GetRand(player->GetMoveWidthArea() * 2) - (player->GetMoveWidthArea()),
+					GetRand(player->GetMoveHeightArea() * 2) - (player->GetMoveHeightArea()), enemyFirstPosZ);
+				CreateFunc(v);
+				count_ = 0;
+			}
+		};
+
+		CreateEnemyFunc(enemyCount, MaxEnemyCount, std::bind(&EnemyManager::CreateEnemy, enemyManager, std::placeholders::_1));
+		CreateEnemyFunc(enemy02Count, MaxEnemy02Count, std::bind(&EnemyManager::CreateEnemy02, enemyManager, std::placeholders::_1));
+
 		enemyCount++;
+		enemy02Count++;
 		/*if(Collision(player, enemy))
 		{
 			isNextScene = true;
