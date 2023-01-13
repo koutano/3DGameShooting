@@ -15,7 +15,7 @@ namespace Game
 	public:
 		bool GetDeadFlag() { return deadFlag; }
 		void SetDeadFlag(bool deadFlag_) { deadFlag = deadFlag_; }
-		void OnCollisionBullet();
+		virtual void OnCollisionBullet();
 	protected:
 		float speed{ 0.5f };
 		int deleteTime{ 300 };
