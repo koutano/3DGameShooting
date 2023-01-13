@@ -8,6 +8,7 @@ namespace Game
 	Enemy03::Enemy03(VECTOR pos_) :
 		EnemyBase(pos_,VGet(1,1,1),VGet(0,180,0))
 	{
+		hp = 10;
 	}
 
 	void Enemy03::Update()
@@ -25,6 +26,21 @@ namespace Game
 	void Enemy03::Draw()
 	{
 		TEngine::Library::DrawModel("enemy03", pos, degreeAngle, scale);
+	}
+
+	void Enemy03::OnCollisionBullet()
+	{
+		hp--;
+		if (hp <= 0)
+		{
+			SetDeadFlag(true);
+		}
+		else
+		{
+			scale.x += 1;
+			scale.y += 1;
+		}
+
 	}
 
 }
