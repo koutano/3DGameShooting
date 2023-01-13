@@ -33,9 +33,11 @@ namespace Game
 		Score* score{ nullptr };
 
 		int enemyCount{ 0 };
-		const int MaxEnemyCount{ 10 };
 		int enemy02Count{ 0 };
+		int enemy03Count{ 0 };
+		const int MaxEnemyCount{ 10 };
 		const int MaxEnemy02Count{ 20 };
+		const int MaxEnemy03Count{ 60 };
 		float enemyApperAreaX{ 100 };
 		float enemyApperAreaY{ 50 };
 		float enemyFirstPosZ{ 100 };

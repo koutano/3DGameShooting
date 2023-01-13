@@ -79,9 +79,10 @@ namespace Game
 
 		CreateEnemyFunc(enemyCount, MaxEnemyCount, std::bind(&EnemyManager::CreateEnemy, enemyManager, std::placeholders::_1));
 		CreateEnemyFunc(enemy02Count, MaxEnemy02Count, std::bind(&EnemyManager::CreateEnemy02, enemyManager, std::placeholders::_1));
-
-		enemyCount++;
-		enemy02Count++;
+		CreateEnemyFunc(enemy03Count, MaxEnemy03Count, std::bind(&EnemyManager::CreateEnemy03, enemyManager, std::placeholders::_1));
+		//enemyCount++;
+		//enemy02Count++;
+		enemy03Count++;
 		/*if(Collision(player, enemy))
 		{
 			isNextScene = true;
