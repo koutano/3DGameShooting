@@ -8,6 +8,7 @@ namespace Game
 	Enemy::Enemy(VECTOR pos_) :
 		EnemyBase(pos_,VGet(1,1,1),VGet(0,180,0))
 	{
+		hp = 1;
 	}
 
 	void Enemy::Update()
