@@ -7,6 +7,7 @@
 #include "Game/BulletManager.h"
 #include "Game/EnemyManager.h"
 #include "Game/Score.h"
+#include "Game/ShockWaveManager.h"
 
 namespace Game
 {
@@ -32,16 +33,21 @@ namespace Game
 		BulletManager* bulletManager{ nullptr };// 弾
 		EnemyManager* enemyManager{ nullptr };	// 敵
 		Score* score{ nullptr };
+		ShockWaveManager* shockWaveManager{ nullptr };
 
 		int enemyCount{ 0 };
 		int enemy02Count{ 0 };
 		int enemy03Count{ 0 };
+		int enemy04Count{ 0 };
 		const int MaxEnemyCount{ 10 };
 		const int MaxEnemy02Count{ 20 };
 		const int MaxEnemy03Count{ 60 };
+		const int MaxENemy04Count{ 10 };
 		float enemyApperAreaX{ 100 };
 		float enemyApperAreaY{ 50 };
 		float enemyFirstPosZ{ 100 };
+
+		int isCreateShockWave{ 0 };
 		//int score{ 0 };
 	};
 }

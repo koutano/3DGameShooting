@@ -17,6 +17,7 @@ namespace Game
 		camera = new CameraManager;
 		enemyManager = new EnemyManager;
 		score = new Score;
+		shockWaveManager = new ShockWaveManager;
 	}
 
 	GameScene::~GameScene()
@@ -27,6 +28,7 @@ namespace Game
 		delete camera;
 		delete enemyManager;
 		delete score;
+		delete shockWaveManager;
 	}
 
 	void GameScene::Update()
@@ -35,7 +37,7 @@ namespace Game
 		camera->Update();
 		bulletManager->Update();
 		enemyManager->Update();
-
+		shockWaveManager->Update();
 
 
 		auto bullets = bulletManager->GetBullets();
@@ -61,6 +63,12 @@ namespace Game
 					if ((*itr1)->GetDeadFlag())
 					{
 						score->AddScore(70);
+						(*itr1)->AfterDeath(&isCreateShockWave);
+					}
+					if (isCreateShockWave)
+					{
+						shockWaveManager->CreateShockWave(*itr1);
+						isCreateShockWave = 0;
 					}
 				}
 			}
@@ -80,9 +88,11 @@ namespace Game
 		CreateEnemyFunc(enemyCount, MaxEnemyCount, std::bind(&EnemyManager::CreateEnemy, enemyManager, std::placeholders::_1));
 		CreateEnemyFunc(enemy02Count, MaxEnemy02Count, std::bind(&EnemyManager::CreateEnemy02, enemyManager, std::placeholders::_1));
 		CreateEnemyFunc(enemy03Count, MaxEnemy03Count, std::bind(&EnemyManager::CreateEnemy03, enemyManager, std::placeholders::_1));
+		CreateEnemyFunc(enemy04Count, MaxENemy04Count, std::bind(&EnemyManager::CreateEnemy04, enemyManager, std::placeholders::_1));
 		enemyCount++;
 		enemy02Count++;
 		enemy03Count++;
+		enemy04Count++;
 		/*if(Collision(player, enemy))
 		{
 			isNextScene = true;
@@ -101,6 +111,7 @@ namespace Game
 		player->Draw();
 		bulletManager->Draw();
 		enemyManager->Draw();
+		shockWaveManager->Draw();
 
 		score->Draw();
 	}

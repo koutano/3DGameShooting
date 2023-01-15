@@ -38,6 +38,7 @@
     <ClCompile Include="Src\Scene\Game\Player.cpp" />
     <ClCompile Include="Src\Scene\Game\Score.cpp" />
     <ClCompile Include="Src\Scene\Game\ShockWave.cpp" />
+    <ClCompile Include="Src\Scene\Game\ShockWaveManager.cpp" />
     <ClCompile Include="Src\Scene\SceneControl.cpp" />
     <ClCompile Include="Src\Scene\TitleScene.cpp" />
   </ItemGroup>
@@ -62,6 +63,7 @@
     <ClInclude Include="Src\Scene\Game\Player.h" />
     <ClInclude Include="Src\Scene\Game\Score.h" />
     <ClInclude Include="Src\Scene\Game\ShockWave.h" />
+    <ClInclude Include="Src\Scene\Game\ShockWaveManager.h" />
     <ClInclude Include="Src\Scene\SceneControl.h" />
     <ClInclude Include="Src\Scene\TitleScene.h" />
   </ItemGroup>

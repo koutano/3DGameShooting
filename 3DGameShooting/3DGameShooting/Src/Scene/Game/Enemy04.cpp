@@ -8,7 +8,7 @@ namespace Game
 	Enemy04::Enemy04(VECTOR pos_) :
 		EnemyBase(pos_,VGet(1,1,1),VGet(0,180,0))
 	{
-		hp = 10;
+		hp = 1;
 	}
 
 	void Enemy04::Update()
@@ -36,7 +36,10 @@ namespace Game
 			SetDeadFlag(true);
 		}
 		
-
 	}
 
+	void Enemy04::AfterDeath(int* isCreateShockWave_)
+	{
+		*isCreateShockWave_ = 1;
+	}
 }
