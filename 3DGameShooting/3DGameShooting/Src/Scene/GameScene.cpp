@@ -42,6 +42,7 @@ namespace Game
 
 		auto bullets = bulletManager->GetBullets();
 		auto enemies = enemyManager->GetEnemies();
+		auto shockWaves = shockWaveManager->GetShockWaves();
 
 		/*for (int i = 0; i < bullets.size(); ++i)
 		{
@@ -64,6 +65,27 @@ namespace Game
 					{
 						score->AddScore(70);
 						(*itr1)->AfterDeath(&isCreateShockWave);
+					}
+					if (isCreateShockWave)
+					{
+						shockWaveManager->CreateShockWave(*itr1);
+						isCreateShockWave = 0;
+					}
+				}
+			}
+		}
+
+		for (auto itr1 = shockWaves.begin(); itr1 != shockWaves.end(); ++itr1)
+		{
+			for (auto itr2 = enemies.begin(); itr2 != enemies.end(); ++itr2)
+			{
+				if (Collision(*itr1, *itr2))
+				{
+					(*itr2)->OnCollisionShockWave();
+					if ((*itr2)->GetDeadFlag())
+					{
+						score->AddScore(70);
+						(*itr2)->AfterDeath(&isCreateShockWave);
 					}
 					if (isCreateShockWave)
 					{
