@@ -10,4 +10,9 @@ namespace Game
 			SetDeadFlag(true);
 		}
 	}
+	void EnemyBase::OnCollisionShockWave()
+	{
+		hp = 0;
+		SetDeadFlag(true);
+	}
 }
