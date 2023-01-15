@@ -4,7 +4,9 @@ namespace Game
 {
 	ShockWaveManager::ShockWaveManager()
 	{
-		TEngine::Library::LoadModel("bullet", "Res/NormalSphere.mv1");
+		TEngine::Library::LoadModel("shockwave", "Res/ShockWave.mv1");
+		MV1SetMaterialDifColor(TEngine::Library::GetModel("shockwave"), 0, GetColorF(0.6627f, 0.8078f, 0.9255f, 0.5f));
+
 	}
 
 	ShockWaveManager::~ShockWaveManager()
@@ -13,7 +15,7 @@ namespace Game
 		{
 			delete shockWave;
 		}
-		TEngine::Library::DeleteModel("bullet");
+		TEngine::Library::DeleteModel("shockwave");
 	}
 
 	void ShockWaveManager::CreateShockWave(ObjBase* obj_)
@@ -32,10 +34,10 @@ namespace Game
 		// 弾の消える処理
 		for (auto itr = shockWaves.begin(), itr_end = shockWaves.end(); itr != shockWaves.end();)
 		{
-			if ((*itr)->IsDead())
+			if ((*itr)->GetDeadFlag())
 			{
 				delete* itr;
-				itr = bullets.erase(itr);
+				itr = shockWaves.erase(itr);
 			}
 			else
 			{
@@ -46,9 +48,9 @@ namespace Game
 
 	void ShockWaveManager::Draw()
 	{
-		for (auto bullet : shockWaves)
+		for (auto shockWave : shockWaves)
 		{
-			bullet->Draw();
+			shockWave->Draw();
 		}
 	}
 }

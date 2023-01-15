@@ -10,11 +10,16 @@ namespace Game
 	class ShockWave:public ObjBase
 	{
 	public:
-		ShockWave(VECTOR pos_);
+		ShockWave(ObjBase* obj_);
 		~ShockWave()override = default;
 	public:
 		void Update()override;
 		void Draw()override;
+	public:
+		bool GetDeadFlag() { return endFlag; }
+	private:
+		bool endFlag{ false };
+		const int MaxRange{ 10 };
 	};
 }
 
