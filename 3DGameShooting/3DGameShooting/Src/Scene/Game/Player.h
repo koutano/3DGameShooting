@@ -8,6 +8,7 @@
 
 namespace Game
 {
+	// プレイヤークラス
 	class Player :public ObjBase
 	{
 	public:

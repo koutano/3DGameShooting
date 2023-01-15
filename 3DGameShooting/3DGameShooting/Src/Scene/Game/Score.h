@@ -3,6 +3,7 @@
 
 namespace Game
 {
+	// スコア表示
 	class Score
 	{
 	public:

@@ -5,6 +5,7 @@
 
 namespace Game
 {
+	// 弾
 	class Bullet :public ObjBase
 	{
 	public:

@@ -10,6 +10,7 @@
 
 namespace Game
 {
+	// ゲームシーン
 	class GameScene :public BaseScene
 	{
 	public:

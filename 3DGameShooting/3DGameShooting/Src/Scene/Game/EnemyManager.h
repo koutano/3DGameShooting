@@ -7,6 +7,7 @@
 
 namespace Game
 {
+	// 敵管理クラス
 	class EnemyManager
 	{
 	public:

@@ -6,6 +6,7 @@
 
 namespace Game
 {
+	// 弾が当たると大きくなる敵
 	class Enemy03:public EnemyBase
 	{
 	public:

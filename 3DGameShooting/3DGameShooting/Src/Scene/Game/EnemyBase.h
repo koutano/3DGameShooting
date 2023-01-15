@@ -5,6 +5,7 @@
 
 namespace Game
 {
+	// 敵基底クラス
 	class EnemyBase:public ObjBase
 	{
 	public:

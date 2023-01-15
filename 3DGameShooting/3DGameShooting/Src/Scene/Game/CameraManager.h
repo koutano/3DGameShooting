@@ -6,6 +6,7 @@
 
 namespace Game
 {
+	// カメラ
 	class CameraManager
 	{
 	public:

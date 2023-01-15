@@ -6,6 +6,7 @@
 
 namespace Game
 {
+	// 衝撃波クラス
 	class ShockWave:public ObjBase
 	{
 	public:

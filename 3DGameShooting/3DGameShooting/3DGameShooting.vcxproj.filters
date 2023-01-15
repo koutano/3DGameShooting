@@ -70,6 +70,15 @@
     <ClCompile Include="Src\Scene\Game\EnemyBase.cpp">
       <Filter>ソース ファイル\Scene\Game</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Scene\Game\Enemy03.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\Enemy04.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\Game\ShockWave.cpp">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\Scene\SceneControl.h">
@@ -127,6 +136,15 @@
       <Filter>ソース ファイル\Scene\Game</Filter>
     </ClInclude>
     <ClInclude Include="Src\Scene\Game\EnemyBase.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\Enemy03.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\Enemy04.h">
+      <Filter>ソース ファイル\Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\Game\ShockWave.h">
       <Filter>ソース ファイル\Scene\Game</Filter>
     </ClInclude>
   </ItemGroup>

@@ -6,6 +6,7 @@
 
 namespace Game
 {
+	// 通常の敵
 	class Enemy:public EnemyBase
 	{
 	public:

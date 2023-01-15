@@ -6,6 +6,7 @@
 
 namespace Game
 {
+	// HPが多い敵
 	class Enemy02:public EnemyBase
 	{
 	public:

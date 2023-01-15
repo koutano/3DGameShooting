@@ -6,6 +6,7 @@
 
 namespace Game
 {
+	// 倒れると衝撃波を出す敵
 	class Enemy04:public EnemyBase
 	{
 	public:

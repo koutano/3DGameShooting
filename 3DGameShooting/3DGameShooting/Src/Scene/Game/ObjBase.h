@@ -5,6 +5,7 @@
 
 namespace Game
 {
+	// オブジェクト基底クラス
 	class ObjBase
 	{
 	public:
