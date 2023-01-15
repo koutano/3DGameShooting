@@ -17,7 +17,7 @@ namespace Game
 		// 描画用
 		void Draw()override;
 		// 弾の生死確認用
-		bool IsDead() { return deadFlag; }
+		bool GetDeadFlag() { return deadFlag; }
 		void SetDeadFlag(bool deadFlag_) { deadFlag = deadFlag_; }
 		void OnCollisionEnemy() { deadFlag = true; }
 	private:

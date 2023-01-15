@@ -32,7 +32,7 @@ namespace Game
 		// 弾の消える処理
 		for (auto itr = bullets.begin(), itr_end = bullets.end(); itr != bullets.end();)
 		{
-			if ((*itr)->IsDead())
+			if ((*itr)->GetDeadFlag())
 			{
 				delete* itr;
 				itr = bullets.erase(itr);
