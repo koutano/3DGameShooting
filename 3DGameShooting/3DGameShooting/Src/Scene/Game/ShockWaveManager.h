@@ -21,7 +21,7 @@ namespace Game
 		// 描画用
 		void Draw();
 
-		std::vector< ShockWave* > GetBullets() { return shockWaves; }
+		std::vector< ShockWave* > GetShockWaves() { return shockWaves; }
 
 	private:
 		std::vector<ShockWave*> shockWaves{};
