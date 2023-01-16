@@ -15,7 +15,6 @@ namespace Game
 	public:
 		void Update()override;
 		void Draw()override;
-		void OnCollisionBullet()override;
 		void AfterDeath(int* isCreateShockWave_)override;
 	};
 }

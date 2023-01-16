@@ -28,16 +28,6 @@ namespace Game
 		TEngine::Library::DrawModel("enemy04", pos, degreeAngle, scale);
 	}
 
-	void Enemy04::OnCollisionBullet()
-	{
-		hp--;
-		if (hp <= 0)
-		{
-			SetDeadFlag(true);
-		}
-		
-	}
-
 	void Enemy04::AfterDeath(int* isCreateShockWave_)
 	{
 		*isCreateShockWave_ = 1;
