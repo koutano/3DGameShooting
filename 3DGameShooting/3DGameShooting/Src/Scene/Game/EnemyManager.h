@@ -19,6 +19,7 @@ namespace Game
 		void CreateEnemy02(VECTOR pos_);
 		void CreateEnemy03(VECTOR pos_);
 		void CreateEnemy04(VECTOR pos_);
+		void CreateEnemy05(VECTOR pos_);
 		void Update();
 		void Draw();
 

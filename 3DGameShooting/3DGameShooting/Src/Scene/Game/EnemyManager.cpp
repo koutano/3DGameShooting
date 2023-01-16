@@ -4,6 +4,7 @@
 #include "Enemy02.h"
 #include "Enemy03.h"
 #include "Enemy04.h"
+#include "Enemy05.h"
 
 namespace Game
 {
@@ -14,12 +15,14 @@ namespace Game
 		TEngine::Library::LoadModel("enemy02", "Res/Enemy02.mv1");
 		TEngine::Library::LoadModel("enemy03", "Res/Enemy03.mv1");
 		TEngine::Library::LoadModel("enemy04", "Res/Enemy04.mv1");
+		TEngine::Library::LoadModel("enemy05", "Res/Enemy05.mv1");
 
 		// Enemyの色付け
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy"), 0, GetColorF(1.0f, 0.0f, 0.0f, 1.0f));
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy02"), 0, GetColorF(0.0f, 1.0f, 0.0f, 1.0f));
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy03"), 0, GetColorF(0.0f, 0.0f, 1.0f, 1.0f));
 		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy04"), 0, GetColorF(1.0f, 1.0f, 0.0f, 1.0f));
+		MV1SetMaterialDifColor(TEngine::Library::GetModel("enemy05"), 0, GetColorF(0.0f, 1.0f, 1.0f, 1.0f));
 	}
 
 	EnemyManager::~EnemyManager()
@@ -48,6 +51,11 @@ namespace Game
 	void EnemyManager::CreateEnemy04(VECTOR pos_)
 	{
 		enemies.push_back(new Enemy04(pos_));
+	}
+
+	void EnemyManager::CreateEnemy05(VECTOR pos_)
+	{
+		enemies.push_back(new Enemy05(pos_));
 	}
 
 	void EnemyManager::Update()
