@@ -33,6 +33,7 @@
     <ClCompile Include="Src\Scene\Game\Enemy02.cpp" />
     <ClCompile Include="Src\Scene\Game\Enemy03.cpp" />
     <ClCompile Include="Src\Scene\Game\Enemy04.cpp" />
+    <ClCompile Include="Src\Scene\Game\Enemy05.cpp" />
     <ClCompile Include="Src\Scene\Game\EnemyBase.cpp" />
     <ClCompile Include="Src\Scene\Game\EnemyManager.cpp" />
     <ClCompile Include="Src\Scene\Game\Player.cpp" />
@@ -57,6 +58,7 @@
     <ClInclude Include="Src\Scene\Game\Enemy02.h" />
     <ClInclude Include="Src\Scene\Game\Enemy03.h" />
     <ClInclude Include="Src\Scene\Game\Enemy04.h" />
+    <ClInclude Include="Src\Scene\Game\Enemy05.h" />
     <ClInclude Include="Src\Scene\Game\EnemyBase.h" />
     <ClInclude Include="Src\Scene\Game\EnemyManager.h" />
     <ClInclude Include="Src\Scene\Game\ObjBase.h" />

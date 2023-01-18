@@ -15,7 +15,8 @@ namespace Game
 	public:
 		void Update()override;
 		void Draw()override;
-
+	private:
+		const int MaxAngle{ 10 };
 	};
 }
 
