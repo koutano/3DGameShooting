@@ -1,9 +1,18 @@
 # 3DGameShooting
-3DのShootingGameです。
+個人で作成した3DのShootingGameです。
 このリポジトリはDXライブラリを用いて制作しているので、DXライブラリのダウンロードと環境変数の追加をお願いします 。
 
+# 操作方法
+| KEY |  |
+| --- | --- |
+| W | 上移動 |
+| A | 左移動 |
+| S | 下移動 |
+| D | 右移動 |
+| P | 弾の射出 |
+
 # DxLibのダウンロード
-https://dxlib.xsrv.jp/dxdload.html
+[DXライブラリ置き場](https://dxlib.xsrv.jp/dxdload.html)
 からダウンロードしていただきzipファイルになっているので展開し、中に入っているプロジェクトに追加すべきファイル_VC用までのファイルパスをコピーしておいてください。
 
 # 環境変数の追加
