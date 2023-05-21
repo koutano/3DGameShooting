@@ -115,10 +115,12 @@ namespace Game
 		enemy02Count++;
 		enemy03Count++;
 		enemy04Count++;
-		/*if(Collision(player, enemy))
+		
+		for (auto itr = enemies.begin(); itr != enemies.end(); ++itr)
+		if(Collision(player, (*itr)))
 		{
 			isNextScene = true;
-		}*/
+		}
 
 		if (TEngine::Library::IsKeyPushed(KEY_INPUT_RETURN))
 		{
