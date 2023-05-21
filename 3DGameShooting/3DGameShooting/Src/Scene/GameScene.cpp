@@ -10,7 +10,6 @@ namespace Game
 	GameScene::GameScene()
 	{
 		nextScene = Scene::Title;
-		TEngine::Library::LoadTexture("game", "Res/Game.png");
 		
 		bulletManager = new BulletManager;
 		player = new Player(bulletManager);
@@ -22,7 +21,6 @@ namespace Game
 
 	GameScene::~GameScene()
 	{
-		TEngine::Library::DeleteTexture("game");
 		delete bulletManager;
 		delete player;
 		delete camera;
@@ -131,7 +129,6 @@ namespace Game
 
 	void GameScene::Draw()
 	{
-		//TEngine::Library::DrawTexture("game", 400, 300);
 		player->Draw();
 		bulletManager->Draw();
 		enemyManager->Draw();
