@@ -2,6 +2,7 @@
 #define MODEL_MANAGER_H_
 
 #include <unordered_map>
+#include <string>
 
 namespace TEngine
 {
@@ -15,8 +16,8 @@ namespace TEngine
 		int GetModel(const char* keyword_);
 	private:
 		/*
-			3Dƒ‚ƒfƒ‹‚Ìí—Ş => Fbx, Obj, MMD, XFile
-			¡‰ñ‚Ídxlib‚ğg—p‚µ‚Ä‚¢‚é‚Ì‚ÅMV1
+			3Dãƒ¢ãƒ‡ãƒ«ã®ç¨®é¡ => Fbx, Obj, MMD, XFile
+			ä»Šå›ã¯dxlibã‚’ä½¿ç”¨ã—ã¦ã„ã‚‹ã®ã§MV1
 		*/
 		std::unordered_map<std::string, int> models;
 
